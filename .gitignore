@@ -1,0 +1,46 @@
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual Environment
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Challenge Data
+data/raw/
+data/processed/
+
+# Models / Checkpoints
+models/
+*.pkl
+*.joblib
+*.pt
+*.pth
+*.bin
+*.safetensors
+
+# Environment / Secrets
+.env
+.env.*
+!.env.example
+
+# Logs / Temporary Files
+*.log
+tmp/
+temp/
+
+# Generated Outputs
+outputs/
+*.tmp
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
