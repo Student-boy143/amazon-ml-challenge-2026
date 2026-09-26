@@ -35,3 +35,23 @@ for name, path in files.items():
     print(f"Unique names: {unique:,}")
     print(f"Duplicate-name records: {duplicates:,}")
     print(f"Unique-name ratio: {unique / total:.2%}")
+
+import pandas as pd
+import os
+
+BASE = r"C:\Users\Lenovo\amazon-ml-challenge-2026-data\student_resource"
+
+files = {
+    "test_source1": "test_source1.tsv",
+    "test_source2": "test_source2.tsv",
+    "test_source3": "test_source3.tsv",
+}
+
+for name, filename in files.items():
+    path = os.path.join(BASE, "dataset", "test", filename)
+
+    df = pd.read_csv(path, sep="\t", usecols=["entity_id"])
+
+    print(f"{name.upper()}")
+    print(f"Rows: {len(df):,}")
+    print()
